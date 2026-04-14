@@ -74,6 +74,9 @@ footer{
     a img:hover{
         width: 35px;
     }
+    p{
+        width: 150px;
+    }
 }
 #info{
     display: flex;
