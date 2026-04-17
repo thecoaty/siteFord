@@ -16,6 +16,7 @@ header{
     align-items: center;
     background : var(--cor-primaria);
     border-radius: 0 0 5% 0;
+    box-shadow: 0px 2px 6px black;
 }
 .logoFord{
     justify-self: start;
