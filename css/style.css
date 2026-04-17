@@ -4,6 +4,8 @@
     --cor-primaria: #1351d8;
     --cor-secundaria: #1b357e;
     --border-conteudo: 2px solid #E8E6E1;
+    --fonte-principal: 'Saira Stencil', sans-serif;
+    --fonte-secundaria: 'Times New Roman', Times, serif;
 }
 body{
     background-color: var(--cor-background);
@@ -28,7 +30,7 @@ header{
     font-size: 1.2rem;
 }
 .navLinks a{
-    font-family:'Times New Roman', Times, serif;
+    font-family: var(--fonte-secundaria);
     text-decoration: none;
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
@@ -49,7 +51,7 @@ main{
 h1{
     padding-top: 10px;
     font-size: 2.3rem;
-    font-family: 'Saira Stencil', sans-serif;
+    font-family: var(--fonte-principal);
     color: var(--cor-secundaria);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     font-weight: 700;
