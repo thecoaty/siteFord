@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --cor-background: white;
     --cor-primaria: #1351d8;
     --cor-secundaria: #1b357e;
-    --border-conteudo: 2px solid #E8E6E1;
-    --fonte-principal: 'Saira Stencil', sans-serif;
+    --border-conteudo: 2px solid #dddad3;
+    --fonte-principal: 'Montserrat', sans-serif;
     --fonte-secundaria: 'Times New Roman', Times, serif;
+    --cor-conteudo: #E8E6E1;
 }
+
 body{
     background-color: var(--cor-background);
 }
@@ -16,16 +18,16 @@ header{
     display: flex;
     align-items: center;
     text-align: center;
-    background : var(--cor-primaria);
+    background-color : var(--cor-primaria);
     border-radius: 0 0 5% 0;
     box-shadow: 0px 2px 6px black;
 }
 .logoFord{
     position: absolute;
     margin-left: 10px;
-    img{
-        height: 5rem;
-    }
+}
+.logoFord img{
+    height: 5rem;
 }
 
 .navLinks{
@@ -38,11 +40,14 @@ header{
     font-family: var(--fonte-secundaria);
     text-decoration: none;
     color: white;
+    padding: 10px;
+    border-radius: 10px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     margin: 0 0.8rem;
 }
 .navLinks a:hover{
-    color: var(--cor-secundaria);
+    color: black;
+    background-color: var(--cor-secundaria);
 }
 
 main{
@@ -64,6 +69,7 @@ h1{
 }
 .conteudo{
     padding-top: 10px;
+    background-color: var(--cor-conteudo);
     border: var(--border-conteudo);
     width: 80%;
     display: flex;
@@ -72,37 +78,123 @@ h1{
     align-content: center;
     align-items: center;
     justify-content: center;
-    p{
-        border: var(--border-conteudo);
-        padding: 10px;
-        border-radius: 25px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 80%;
-        font-size: 1.1rem;
-        text-shadow: #585755 0px 0px 1px;
-    }
 }
-.conteudoVideo{
+.conteudoDescricao{
+    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.conteudoDescricao p{
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    width: 400px;
+}
+.conteudoDescricaoRanger{
+    border: var(--border-conteudo);
+    font-weight: 600;
+}
+.conteudoDescricaoLancamentos{
+    width: 400px;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    font-weight: 600;
+}
+.conteudoDescricao p a{
+    background-color: var(--cor-primaria);
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+.conteudoDescricao p a:hover{
+    background-color: var(--cor-secundaria);
+}
+.conteudoImage{
+    width: 90%;
+    overflow: hidden;
+}
+.conteudoImage a img{
+    width: 110%;
+    box-shadow: 10px 5px 5px black;
+}
+
+.conteudoVideo{
+    width: 95%;
     padding-bottom: 460px;
-    iframe{
-        justify-content: center;
-        position: absolute;
-        width: 100%;
-        height: 50%;
+    position: relative;
+}
+.conteudoVideo iframe{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.conteudoLancamentos{
+    width: 100%;
+
+}
+.conteudoLancamentos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.lancamentosListItem{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+}
+.lancamentosListItemDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    h3{
+        font-family: var(--fonte-secundaria);
+        color: var(--cor-secundaria);
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    p{
+        font-family: var(--fonte-secundaria);
+        border: none;
+        font-size: 1rem;
+        width: 200px;
     }
 }
-.conteudo img{
-    width: 90%;
-    box-shadow: 10px 5px 5px black;
+.lancamentosListItemDiv input{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border: 5px solid var(--cor-primaria);
+}
+.lancamentoBotao{
+    background-color: var(--cor-primaria);
+    color: #E8E6E1;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+.lancamentoBotao:hover{
+    background-color: var(--cor-secundaria);
+    cursor: pointer;
 }
 
 footer{
     border-radius: 10% 0 0 0;
-    background: var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
     display: flex;
     text-align: center;
     position: fixed;
@@ -126,7 +218,7 @@ footer{
     p{
         width: 150px;
     }
-    
+
 }
 .copy{
     width: 100%;
@@ -139,16 +231,7 @@ footer{
     right: 1.4rem;
 }
 
-@media (max-width:1750px){
-.conteudoVideo{
-    flex-direction: row;
-    padding-bottom: 0%;
-    iframe{
-        justify-content: center;
-        position: inherit;
-    }
-}
-}
+
 @media (max-width: 960px) {
 header{
     height: 100%;
@@ -161,19 +244,17 @@ header{
     position:static;
 }
 .conteudo{
-    width: 100%;
+    width: 95%;
 }
-.conteudo img{
-    height: 500%;
-    object-fit: contain;
+main{
+    padding-bottom: 11rem;
 }
-
 h1{
     font-size: 2rem;
 }
 footer{
     padding-top: 1.1rem;
-    height: auto;
+    height: 9rem;
     flex-direction: column;
 
 }
