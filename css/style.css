@@ -46,7 +46,7 @@ header{
 }
 
 main{
-    padding-top: 5px;
+    padding-top: 15px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -63,6 +63,7 @@ h1{
     font-weight: 700;
 }
 .conteudo{
+    padding-top: 10px;
     border: var(--border-conteudo);
     width: 80%;
     display: flex;
@@ -138,7 +139,6 @@ footer{
     right: 1.4rem;
 }
 
-/* CSS media query dentro de um stylesheet */
 @media (max-width:1750px){
 .conteudoVideo{
     flex-direction: row;
@@ -149,26 +149,30 @@ footer{
     }
 }
 }
-@media (max-width: 768px) { 
+@media (max-width: 960px) {
+header{
+    height: 100%;
+    padding-bottom: 20px;
+    flex-direction: column;
+    gap: 5px;
+} 
 .logoFord{
-    position: relative;
-    margin-left: 5px;
-    img{
-        height: 1.5rem;
-    }
+    padding-top: 10px;
+    position:static;
 }
 .conteudo{
     width: 100%;
 }
 .conteudo img{
     height: 500%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 h1{
     font-size: 2rem;
 }
 footer{
+    padding-top: 1.1rem;
     height: auto;
     flex-direction: column;
 
