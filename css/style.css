@@ -87,13 +87,29 @@ h1{
     flex-wrap: wrap;
     gap: 5px;
 }
-.conteudoDescricao p{
+.conteudoDescricao p {
     padding: 10px;
     border-radius: 25px;
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 1.1rem;
     width: 400px;
+}
+.conteudoDescricaoVideo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.conteudoDescricaoVideo p{
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    width: 600px;
 }
 .conteudoDescricaoRanger{
     border: var(--border-conteudo);
@@ -199,11 +215,12 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--cor-secundaria);
     margin-bottom: 10px;
     border-radius: 10px;
 }
 form{
+    border-radius: 10px;
+    background-color: var(--cor-secundaria);
     width: 50%;
     display: flex;
     flex-wrap: wrap;
@@ -212,6 +229,7 @@ form{
     padding: 12% 1rem; 
 }
 form h2{
+    margin-bottom: 5%;
     font-family: var(--fonte-secundaria);
     font-weight: 800;
     color: #dddad3;
@@ -344,6 +362,6 @@ footer{
     display: none;
 }
 form{
-    width: 80%;
+    width: 90%;
 }
 }
