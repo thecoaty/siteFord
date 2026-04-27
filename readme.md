@@ -1,6 +1,11 @@
 # Projeto da Sprit de HTML e CSS da Ford Enter
+<p>
+  <img alt="HTML" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+  <img alt="CSS" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+</p>
+
 ## Objetivo
-Projeto com o objetivo de aplicar os conhecimentos adquiridos ao decorrer da sprint de HTML e CSS do curso da Ford, esse projeto vai ser avaliado para a obtenção da nota final dessa disciplina, sendo desenvolvido seguindo as seguintes instruções.
+> Projeto com o objetivo de aplicar os conhecimentos adquiridos ao decorrer da sprint de HTML e CSS do curso da Ford, esse projeto vai ser avaliado para a obtenção da nota final dessa disciplina, sendo desenvolvido seguindo as seguintes instruções.
 
 ## Desafio Proposto:
 - Passo 1: inserir a logomarca no cabeçalho (header) do site.
